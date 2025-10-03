@@ -35,6 +35,8 @@ DJANGO_APPS = [
 ]
 CUSTOM_APPS = [
     "apps.users",
+    "apps.batch",
+    "apps.base",
 ]
 
 THIRD_PARTY_APPS = [
@@ -42,6 +44,7 @@ THIRD_PARTY_APPS = [
     "rest_framework.authtoken",
     "rest_framework_simplejwt",
     "drf_spectacular",
+    "corsheaders",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PARTY_APPS
