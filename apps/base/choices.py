@@ -14,3 +14,6 @@ class StatusChoices(models.TextChoices):
 class UserTypeChoices(models.TextChoices):
     USER = "user", "User"
     ADMIN = "admin", "Admin"
+    STAFF = "staff", "Staff"
+    STUDENT = "student", "Student"
+    
