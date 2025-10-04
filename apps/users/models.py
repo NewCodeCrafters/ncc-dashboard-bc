@@ -17,7 +17,7 @@ class User(BaseModel, AbstractBaseUser, PermissionsMixin):
     otp = models.CharField(max_length=6, blank=True, null=True)
     otp_created_at = models.DateTimeField(blank=True, null=True)
     otp_verified = models.BooleanField(default=False)
-    is_student = models.BooleanField(default=False)  # Optional: can derive from user_type
+    is_student = models.BooleanField(default=False)  
     is_active = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
 
